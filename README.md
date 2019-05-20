@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails s -e production -d
+ab -n 100 -r http://0.0.0.0:3000/processes
+ab -n 100 -r http://0.0.0.0:3000/metal_processes
+ab -n 100 -r http://0.0.0.0:3000/custom_metal_processes
+```
